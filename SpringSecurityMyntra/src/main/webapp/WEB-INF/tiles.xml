@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/view/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/view/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/view/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />
+	</definition>
+	<definition name="home-page" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/WEB-INF/view/home-page.jsp" />
+	</definition>
+	<definition name="register-form" extends="base.definition">
+		<put-attribute name="title" value="Register Page" />
+		<put-attribute name="body" value="/WEB-INF/view/register-form.jsp" />
+	</definition>
+	<definition name="confirm-register" extends="base.definition">
+		<put-attribute name="title" value="Confirm Page" />
+		<put-attribute name="body" value="/WEB-INF/view/confirm-register.jsp" />
+	</definition>
+	<definition name="login-page" extends="base.definition">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="body" value="/WEB-INF/view/login-page.jsp" />
+	</definition>
+	<definition name="login-success" extends="base.definition">
+		<put-attribute name="title" value="ConfirmLogin Page" />
+		<put-attribute name="body" value="/WEB-INF/view/login-success.jsp" />
+	</definition>
+	<definition name="list-page" extends="base.definition">
+		<put-attribute name="title" value="List Page" />
+		<put-attribute name="body" value="/WEB-INF/view/list-page.jsp" />
+	</definition>
+	<definition name="detail-page" extends="base.definition">
+		<put-attribute name="title" value="Detail Page" />
+		<put-attribute name="body" value="/WEB-INF/view/detail-page.jsp" />
+	</definition>
+	<definition name="cart-page" extends="base.definition">
+		<put-attribute name="title" value="Cart Page" />
+		<put-attribute name="body" value="/WEB-INF/view/cart-page.jsp" />
+	</definition>
+	<definition name="checkout-success" extends="base.definition">
+		<put-attribute name="title" value="Cart Success Page" />
+		<put-attribute name="body" value="/WEB-INF/view/checkout-success.jsp" />
+	</definition>
+	<definition name="logout-page" extends="base.definition">
+		<put-attribute name="title" value="log out Page" />
+		<put-attribute name="body" value="/WEB-INF/view/logout-page.jsp" />
+	</definition>
+	<definition name="accessdenied" extends="base.definition">
+		<put-attribute name="title" value="Denied Page" />
+		<put-attribute name="body" value="/WEB-INF/view/accessdenied.jsp" />
+	</definition>
+</tiles-definitions>
